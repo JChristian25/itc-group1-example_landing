@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, #F05F57, #360940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(54, 9, 64, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px 20px;
+}
+
+.navbar .brand {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to right, #F05F57, #F7D358);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #F7D358;
+    transform: scale(1.125);
+}
+
+hr {
+    margin: 2px auto;    
+    max-width: 60%;      
+    width: 100%;         
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    margin-top: 2vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #e8eaed;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+main {
+    margin-top: 14vh;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.section-title-main {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-inline: 10%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-block: 2vh;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 4px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(54, 9, 64);
+    padding: 20px;
+}
+
+aside {
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out; 
+}
+
+aside.show {
+    right: 0; 
+}
+
+aside.hide {
+    right: -100%; 
+}
+
+.mobile-navbar {
+    display: inline-block;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.mobile-navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-navbar-menu li {
+    margin-bottom: 15px;
+}
+
+
+.mobile-navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-navbar-menu a:hover {
+    color: #F7D358;
+    transform: scale(1.15);
+}
+
+#CloseSidebarButton {
+    position: absolute; /* Allow precise positioning */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1002; /* Ensure it stays above other elements */
+    width: 30px; /* Restrict button size */
+    height: 30px;
+}
+
+#CloseSidebarButton svg {
+    fill: white;
+}
+
+#MobileMenuButton {
+    cursor: pointer;
+    z-index: 1100; /* Ensure it's above other elements */
+    padding: 10px;  
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.contact .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.social-media-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.social-media-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-media-card p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.social-media-card:hover {
+    transform: translateY(-10px);
+}
+
+.social-media-card a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-card a:hover {
+    color: #F7D358;
+}

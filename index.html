@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/base.js"></script>
+    
+    <title>Parokya ni Steven</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                PAROKYA NI STEVEN
+            </div>
+           
+            <ul class="navbar-menu">
+                <li class="HideNavMobile"><a href="#home">Home</a></li>
+                <li class="HideNavMobile"><a href="#members">About</a></li>
+                <li class="HideNavMobile"><a href="#services">Services</a></li>
+                <li class="HideNavMobile"><a href="#contact">Contact</a></li>
+                <li id = "MobileMenuButton" onclick="ShowSidebarMenu()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <nav class ="mobile-navbar">
+            <ul class="mobile-navbar-menu">
+                <li>
+                    <a id="CloseSidebarButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#members">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="section" id="home">
+            <h2 class="section-title-main">Welcome! to <br>Parokya ni Steven</h2>
+            <hr>
+            <p class="section-description">
+                A place where creativity meets community. Join us in exploring what makes Parokya ni Steven unique.
+            </p>
+        </section>
+        <section id="members">
+            <h2 class="section-title">Our Members</h2>
+            <div class="row">
+                <div class="image-card">
+                    <img src="./img/jchristian.jpg">
+                    <h3 class="image-caption">John Christian Linaban</h3>
+                    <hr>
+                    <p class="section-description">Controller</p>
+                </div>
+
+                <div class="image-card">
+                    <img src="./img/Jedi.jpg">
+                    <h3 class="image-caption">Jedidiah Jubal Tio</h3>
+                    <hr>
+                    <p class="section-description">Duelist</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="./img/Zach.png">
+                    <h3 class="image-caption">Zachary Dumadapat</h3>
+                    <hr>
+                    <p class="section-description">Initiator</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="image-card">
+                    <img src="./img/Charles.jpg">
+                    <h3 class="image-caption">Charles Angel Mananes</h3>
+                    <hr>
+                    <p class="section-description">Duelist</p>
+                </div>
+
+                <div class="image-card">
+                    <img src="./img/Cris.jpg">
+                    <h3 class="image-caption">Cris Jimenez</h3>
+                    <hr>
+                    <p class="section-description">Controller</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="./img/Carlos.jpg">
+                    <h3 class="image-caption">Carlos Miguel Ernacio</h3>
+                    <hr>
+                    <p class="section-description">Initiator</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Explore Our Services and Offerings</h2>
+            <!-- Eme eme na services -->
+            <div class="row">
+                <div class="card">
+                    <h3>Web Design & Development</h3>
+                    <p>Our team creates responsive and visually stunning websites tailored to your business needs. We provide both front-end and back-end development for seamless user experiences.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO & Digital Marketing</h3>
+                    <p>Boost your online presence with our SEO and digital marketing services. We help improve your website's visibility and drive targeted traffic through expert strategies and campaigns.</p>
+                </div>
+                <div class="card">
+                    <h3>Graphic Design</h3>
+                    <p>From branding to marketing materials, our graphic design services offer creative solutions that make your brand stand out with visually impactful designs.</p>
+                </div>
+                <div class="card">
+                    <h3>Consulting & Strategy</h3>
+                    <p>We provide expert consulting services to help businesses strategize and optimize their processes, leading to greater efficiency and growth in a competitive market.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="contact">
+            <h2 class="section-title">Stay connected with us for more updates.</h2>
+            <div class="row">
+                <div class="social-media-card">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                
+                <div class="social-media-card">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+        
+                <div class="social-media-card">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+        
+                <div class="social-media-card">
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2023.svg" alt="LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Parokya ni Steven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
